@@ -1,0 +1,46 @@
+body{
+    font-size: 18px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+header, footer{
+    background-color: rgb(213, 213, 213);
+}
+
+.site-title{
+    color: rgb(38, 40, 47);
+}
+
+#my-image{
+    box-shadow: 0px 0px 2px 1px rgb(0, 0, 0);
+}
+
+a:link{
+    text-decoration: none;
+}
+
+a:hover{
+    color: rgb(238, 238, 238);
+    background-color: rgb(88, 88, 88);
+}
+
+.border{
+    border-style: solid;
+    border-width: 1px;
+    background-color: rgb(205, 205, 205);
+}
+
+.notesborder{
+    border-style: solid;
+    border-width: 1px;
+    background-color: rgb(205, 205, 205);
+}
+
+.notes-title{
+    color: rgb(38, 40, 47);
+    background-color: rgb(213, 213, 213);
+}
+
+ul:nth-child(even) {
+    background-color: rgb(184, 188, 202);
+}

@@ -5,22 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Assignment</title>
+    <link href="css/main.css" rel="stylesheet">
 </head>
 <body>
     <header>
-        <h1>Kevyn Dorsainvil</h1>
+        <h1 class="site-title">Kevyn Dorsainvil</h1>
     </header>
     <nav>
-        <ul>
+        <ul style="list-style-type:none" class="border">
             <li><a href="index.html">Home</a></li>
             <li><a href="notes.html">Notes</a></li>
         </ul>
     </nav>
-    <section>
-        <img src="images/kevyndorsainvilphoto.jpg" alt="Picture of Kevyn as a toddler">
-    </section>
+    <div>
+        <img id="my-image" src="images/kevyndorsainvilphoto.jpg" alt="Picture of Kevyn as a toddler">
+    </div>
     <main>
-        <section>
+        <div>
             <article>
                 <h2>About Me</h2>
                 <p>
@@ -34,20 +35,19 @@
                     I've been playing since I was a toddler, and always dreamed of playing in the <abbr title="Union of European Football Associations">UEFA</abbr> Champions League. 
                     Growing up, my favorite player was Neymar. His way of dribbling, controlling and kicking the ball was nothing short of amazing to me. 
                     I remember him saying: <blockquote>A historic defeat cannot bow our heads forever. -<cite>Neymar Jr.</cite></blockquote> 
-                    I feel a lot of people can relate to this because when life pushes you down, you must push through life and always keep your head up no matter what. 
-                </p>
+                    I feel a lot of people can relate to this because when life pushes you down, you must push through life and always keep your head up no matter what.
             </article>
             <article>
                 <h4> My Hobbies</h4>
-                <ul>
+                <ul style="list-style-type:square">
                     <li>Football (European)</li>
                     <li>Drawing</li>
                 </ul>
             </article>
-        </section>
+        </div>
     </main>
-    <footer>
-        Copywrite 2023.
+    <footer>&copy;
+        2023
     </footer>
 </body>
 </html>
