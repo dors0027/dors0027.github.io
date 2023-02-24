@@ -1,0 +1,97 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+background-color: rgb(40, 40, 40);
+}
+
+.wrapper{
+    background-color: rgb(235, 247, 255);
+    width: 750px;
+    margin: auto;
+}
+
+section img{
+    padding-left: 9px;
+}
+
+section h2{
+    padding-left: 9px;
+    padding-top: 10px;
+}
+
+/*Display*/
+
+.display li{
+    display: inline;
+}
+
+.display{
+    text-align: center;
+    font-size: 19px;
+}
+
+div header{
+    background-image: url(../images/mainimage.jpeg);
+    background-position: center;
+    background-size: 900px;
+    background-repeat: no-repeat;
+    text-align: center;
+    padding: 40px;
+    color: white;
+    font-size: 20px;
+}
+
+div p{
+    padding-left: 0px;
+}
+
+.fl-demo p{
+    width: 62%;
+    float: right;
+}
+
+.clearfix::after{
+    content:"";
+    display: block;
+    clear: both;
+}
+
+section h3{
+    padding-left: 15px;
+}
+
+.selection{
+    padding-left: 18px;
+    border-style: solid;
+    width: 714px;
+    padding-top: 13px;
+    margin-left: 8px;
+}
+
+.send{
+    border-style: solid;
+    border-width: 1px;
+    margin-top: 11px;
+    margin-bottom: 14px;
+    padding-left: 10px;
+    font-size: 12px;
+    width: 43px;
+}
+
+.copy{
+    margin-top: 30px;
+    padding-bottom: 20px;
+    margin-left: 630px;
+}
+
+.spread{
+    padding-left: 195px;
+    padding-right: 195px;
+}
+
+a:link{
+    text-decoration: none;
+}
+
+.facts{
+    font-size: 15px;
+}
