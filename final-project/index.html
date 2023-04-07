@@ -9,11 +9,12 @@
     <script src="https://kit.fontawesome.com/59b61e1c13.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <!-- nav section: requires flex o a parent with direct child h1 ul nav form-->
-    <header>
+    <!-- nav section: requires flex parent with direct child h1 ul nav form-->
+    <!-- Home Page -->
+    <header class="header">
         <img src="images/logo.png" alt="logo">
         <div>
-            <nav>
+            <nav class="navigation">
                 <ul>
                     <li><a href="#">Home</a></li>
                     <li><a href="#">About Us</a></li>
@@ -26,9 +27,10 @@
             <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
         </div>
     </header>
+    <!-- Will be using 'background-image' to place text over image -->
     <main>
-        <h1>Welcome to Three Star Media</h1>
-        <div>
+        <div class="welcome">
+            <h1>Welcome to Three Star Media</h1>
             <p>
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus qui magnam voluptatibus quam quos, deleniti nihil nisi velit possimus provident aliquam eaque! Aperiam exercitationem deleniti architecto, libero accusamus suscipit sapiente!
             </p>
@@ -36,8 +38,8 @@
                 <a href="#">Connect with us</a>
                 <i class="fa-sharp fa-solid fa-play"></i>
             </nav>
-            <img src="images/main-banner.jpg" alt="main banner">
-        </div> 
+        </div>
+        <img src="images/main-banner.jpg" alt="main banner">
     </main>
     <section>
         <h2>About Us</h2>
@@ -47,9 +49,11 @@
             <img src="images/about-us.jpg" alt="about us image">
         </div>
     </section>
+    <!-- Our services page-->
+    <!-- Will be using 'grid' to place them accordingly -->
     <h2>Our Services</h2>
     <section>
-        <div>
+        <div class="digital">
             <img src="images/digital.jpg" alt="digital transformation picture">
             <h3>Digital Transformation</h3>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto perspiciatis nostrum dignissimos sit quibusdam optio sed ab doloribus laudantium sapiente doloremque provident, obcaecati nihil ipsum earum? Sit obcaecati doloribus delectus?</p>
@@ -58,7 +62,7 @@
                 <i class="fa-sharp fa-solid fa-play"></i>
             </nav>
         </div>
-        <div>
+        <div class="marketing">
             <img src="images/marketing.jpg" alt="marketing picture">
             <h3>Marketing</h3>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto perspiciatis nostrum dignissimos sit quibusdam optio sed ab doloribus laudantium sapiente doloremque provident, obcaecati nihil ipsum earum? Sit obcaecati doloribus delectus?</p>
@@ -67,7 +71,7 @@
                 <i class="fa-sharp fa-solid fa-play"></i>
             </nav>
         </div>
-        <div>
+        <div class="video">
             <img src="images/video.jpg" alt="video production picture">
             <h3>Video Production</h3>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto perspiciatis nostrum dignissimos sit quibusdam optio sed ab doloribus laudantium sapiente doloremque provident, obcaecati nihil ipsum earum? Sit obcaecati doloribus delectus?</p>
@@ -76,7 +80,7 @@
                 <i class="fa-sharp fa-solid fa-play"></i>
             </nav>
         </div>
-        <div>
+        <div class="webdev">
             <img src="images/web.jpg" alt="web development picture">
             <h3>Web Development</h3>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto perspiciatis nostrum dignissimos sit quibusdam optio sed ab doloribus laudantium sapiente doloremque provident, obcaecati nihil ipsum earum? Sit obcaecati doloribus delectus?</p>
@@ -85,7 +89,7 @@
                 <i class="fa-sharp fa-solid fa-play"></i>
             </nav>
         </div>
-        <div>
+        <div class="print">
             <img src="images/print.jpg" alt="print picture">
             <h3>Print</h3>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto perspiciatis nostrum dignissimos sit quibusdam optio sed ab doloribus laudantium sapiente doloremque provident, obcaecati nihil ipsum earum? Sit obcaecati doloribus delectus?</p>
@@ -95,7 +99,9 @@
             </nav>
         </div>
     </section>
-    <section>
+    <!-- Our Vision banner -->
+    <!-- Will be using 'backgroung-image' to place text over image -->
+    <section class="vision">
         <h3>Our Vision</h3>
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae, dolore laborum placeat consequuntur ea iure deleniti alias eius iste earum dolorem, magnam labore! Earum labore reiciendis aperiam commodi mollitia odio.</p>
         <nav>
@@ -104,24 +110,27 @@
         </nav>
         <img src="images/vision.jpg" alt="our vision image">
     </section>
+    <!-- Team members page -->
     <section>
         <h2>Our Team</h2>
-        <div>
+        <div class="john">
             <h3>John Doe</h3>
             <h4>CEO and Co-owner</h4>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum porro atque voluptatibus error veritatis? Quia ad qui, inventore sapiente modi similique. Commodi totam voluptas quos, distinctio eum vero animi cumque.</p>
             <img src="images/john.jpg" alt="john doe image">
         </div>
-        <div>
+        <div class="bob">
             <h3>Bob Rite</h3>
             <h4>CFO and Co-owner</h4>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, nemo! Eveniet id amet facilis, expedita quisquam provident, quibusdam assumenda dolor harum nam voluptate illo totam maxime sit error animi eius.</p>
             <img src="images/bob.jpg" alt="bob rite image">
         </div>
     </section>
+    <!-- Contact page & location -->
+    <!-- Will be using 'float' to place 'Location' and embedded map to the right of 'Send us a message' and form -->
     <section>
         <h2>Contact Us</h2>
-        <div>
+        <div class="message">
             <h3>Send us a message</h3>
             Full Name
             <div>
@@ -137,14 +146,13 @@
             </div>
             Send
         </div>
-        <div>
+        <div class="location">
             <h3>Location</h3>
             <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1435619.70054365!2d-75.754937!3d45.349928!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1680842561691!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
-    </section>
-    <section>
+    <!-- Hours of operation section -->
         <h3>Hours of operation</h3>
-        <table>
+        <table class="operation">
             <thead>
               <tr>
                 <th>Days</th>
@@ -163,7 +171,9 @@
             </tbody>
           </table>
     </section>
-    <div>
+    <!-- footer section -->
+    <!-- Will be using 'color' and 'background-color' to chnage text color and background color -->
+    <div class="footer">
         <footer>
             &copy;Copywrite Three Star Media, 2020
             <p>All images are taken from Unsplash</p>
