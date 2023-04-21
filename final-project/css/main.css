@@ -114,6 +114,20 @@ body{
 
   /* Our Services */
 
+  .service{
+    width:720px;
+    margin-left:20px;
+  }
+
+  .serviceheader{
+    font-size:50px;
+  }
+
+  .grid{
+    margin-left:auto;
+    margin-right:auto;
+  }
+
   .digital{
     background-color:#ffe6ac;
     margin-bottom:15px;
@@ -131,7 +145,7 @@ body{
 
   .webdev{
     background-color: #ffe6ac;
-    margin-bottom:15px;
+    margin-bottom:18px;
   }
 
   .print{
@@ -140,23 +154,23 @@ body{
   }
 
   .digpic{
-    width:721px;
+    width:720px;
   }
 
   .markpic{
-    width:721px;
+    width:720px;
   }
 
   .vidpic{
-    width:721px;
+    width:720px;
   }
 
   .webpic{
-    width:721px;
+    width:720px;
   }
 
   .printpic{
-    width:721px;
+    width:720px;
   }
 
   .digi{
@@ -217,6 +231,296 @@ body{
   .button2 a:visited,a:link{
     color: #ffffff;
   }
+
+  /* Our Team */
+
+  .vision{
+    margin-top: 31px;
+    padding-top: 45px;
+    padding-bottom: 45px;
+    background-image:url(../images/vision.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    color:white;
+    width:760px;
+    margin-right:auto;
+    margin-left:auto;
+  }
+
+  .ourv{
+    margin-top:-42px;
+    margin-left:20px;
+    margin-right:20px;
+  }
+
+  .visionheader{
+    font-size:35px;
+  }
+
+  .visiontext{
+    font-size:12px;
+    margin-bottom: 20px;
+  }
+
+  .visionbutton{
+    background-color: #09182e;
+    margin-left:1px;
+    padding-top:25px;
+    padding-bottom:25px;
+    margin-bottom:-30px;
+    text-align:center;
+    text-decoration:none;
+    margin-right:565px;
+    border-style:solid;
+    border-color: #c78c06;
+    border-width: 1px;
+  }
+
+  .visionbutton a:visited,a:link{
+    color: #ffffff;
+  }
+
+  /* Our Teams */
+
+  .team{
+    width:720px;
+    margin-left:20px;
+  }
+
+  .flex{
+    background-color:#ffe6ac;
+    display:flex;
+    flex-direction:column-reverse;
+    padding-bottom:15px;
+    margin-bottom:15px;
+  }
+
+  .flex2{
+    background-color:#ffe6ac;
+    display:flex;
+    flex-direction: column-reverse;
+    padding-bottom:15px;
+  }
+
+  .john{
+    margin-left:13px;
+    margin-right:13px;
+  }
+
+  .bob{
+    margin-left:13px;
+    margin-right:13px;
+  }
+
+  .johnheader{
+    font-size:35px;
+    margin-bottom:-10px;
+  }
+
+  .bobheader{
+    font-size:35px;
+    margin-bottom:-10px;
+  }
+
+  .johnsub{
+    border-style:solid;
+    border-color:#c78c06;
+    border-width:2px;
+    border-top: transparent;
+    border-left: transparent;
+    border-right: transparent;
+  }
+
+  .bobsub{
+    border-style:solid;
+    border-color:#c78c06;
+    border-width:2px;
+    border-top: transparent;
+    border-left: transparent;
+    border-right: transparent;
+  }
+
+  .johnp{
+    font-size:14px;
+  }
+
+  .bobp{
+    font-size:14px;
+  }
+
+  .johnpic{
+    width:720px;
+  }
+
+  .bobpic{
+    width:720px;
+  }
+
+  .teamheader{
+    font-size:38px;
+  }
+
+  /* Contact Us */
+
+  .contact{
+        width:720px;
+        margin-left:20px;
+      }
+
+      .message{
+        margin-right: 20px;
+      }
+
+      .contactheader{
+        font-size:50px;
+      }
+
+      .infoinput input[type=text]{
+        width:715px;
+        height:28px;
+        margin: 8px 0;
+      }
+
+      .messagetext input[type=text]{
+        height:130px;
+        width:715px;
+        margin-top:5px;
+        margin-bottom:15px;
+      }
+
+      .locationheader{
+        margin-bottom:8px;
+        font-size:33px;
+        margin-left:20px;
+      }
+
+      .headermessage{
+        margin-top:0px;
+        font-size:33px;
+        margin-bottom:20px;
+      }
+
+    .send{
+        border-style: solid;
+        border-color: #222;
+        background-color: #222;
+        color: #c78c06;
+        margin-right:640px;
+        text-align:center;
+        margin-top:5px;
+        font-size:21px;
+        margin-bottom:30px;
+      }
+
+    iframe{
+        margin-left:20px;
+        border:0;
+        width:721px;
+        height:500px;
+      }
+
+    .operationtime{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    
+    .operationheader{
+        font-size:33px;
+        padding-top:10px;
+        margin-bottom:15px;
+    }
+
+    .operation{
+        margin-bottom:15px;
+        border-style:solid;
+        border-width:1px;
+        border-color: black;
+        border-collapse:collapse;
+        font-size:15px;
+    }
+
+    .hoursof{
+        margin-left:20px;
+    }
+
+    .days{
+        border-style:solid;
+        border-width:1px;
+        border-color: black;
+        padding-left:183px;
+        padding-right:183px;
+        padding-top:13px;
+        padding-bottom:13px;
+        background-color:#ffe6ac;
+        font-weight:100;
+    }
+
+    .hours{
+        border-style:solid;
+        border-width:1px;
+        border-color: black;
+        padding-left:140px;
+        padding-right:140px;
+        padding-top:13px;
+        padding-bottom:13px;
+        background-color:#ffe6ac;
+        font-weight:100;
+    }
+
+    .week{
+        border-style:solid;
+        border-width:1px;
+        border-color:black;
+        padding-top:13px;
+        padding-bottom:13px;
+        padding-left:13px;
+    }
+
+    .time{
+        border-style:solid;
+        border-width:1px;
+        border-color:black;
+        padding-top:13px;
+        padding-bottom:13px;
+        padding-left:13px;
+    }
+
+    .weekend{
+        border-style:solid;
+        border-width:1px;
+        border-color:black;
+        padding-top:13px;
+        padding-bottom:13px;
+        padding-left:13px;
+    }
+
+    .closed{
+        border-style:solid;
+        border-width:1px;
+        border-color:black;
+        padding-top:13px;
+        padding-bottom:13px;
+        padding-left:13px;
+    }
+
+    /* Footer */
+
+    .footer{
+        background-color:#222;
+        color:#c78c06;
+        width:760px;
+        margin-left:auto;
+        margin-right:auto;
+        padding-top:30px;
+        padding-bottom:8px;
+    }
+
+    .footext{
+        margin-left:20px;
+        text-align:left;
+        font-size:14px;
+    }
 
 }
  
