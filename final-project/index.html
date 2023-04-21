@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <title>Final Project</title>
     <link rel="stylesheet" href="css/main.css">
     <script src="https://kit.fontawesome.com/59b61e1c13.js" crossorigin="anonymous"></script>
 </head>
@@ -12,172 +15,192 @@
     <!-- nav section: requires flex parent with direct child h1 ul nav form-->
     <!-- Home Page -->
     <header class="header">
-        <img src="images/logo.png" alt="logo">
-        <div>
+        <div class="search">
             <nav class="navigation">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Team</a></li>
-                    <li><a href="#">Contact</a></li>
+                <img src="images/logo.png" alt="logo" class="logo">
+                <ul class="menu-bar">
+                    <li class="home"><a href="#">Home</a></li>
+                    <li class="about"><a href="#">About Us</a></li>
+                    <li class="services"><a href="#">Services</a></li>
+                    <li class="team"><a href="#">Team</a></li>
+                    <li class="contact"><a href="#">Contact</a></li>
+                    <input id="search" name="search" type="text" placeholder="Search" class="searchbar">
+                    <i class="fa-sharp1 fa-solid fa-magnifying-glass" id="magnify"></i> 
                 </ul>
             </nav>
-            <input id="search" name="search" type="text" placeholder="Search" required>
-            <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
         </div>
-    </header>
     <!-- Will be using 'background-image' to place text over image -->
-    <main>
+    <div>
+        <img src="images/main-banner.jpg" alt="main banner image" class="mainbanner">
+        
         <div class="welcome">
             <h1>Welcome to Three Star Media</h1>
-            <p>
+            <p id="main-p">
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus qui magnam voluptatibus quam quos, deleniti nihil nisi velit possimus provident aliquam eaque! Aperiam exercitationem deleniti architecto, libero accusamus suscipit sapiente!
-            </p>
-            <nav>
-                <a href="#">Connect with us</a>
+            </p> 
+            <nav class="mainbutton">
+                <a href="#" class="connect">Connect with us</a>
                 <i class="fa-sharp fa-solid fa-play"></i>
             </nav>
-        </div>
-        <img src="images/main-banner.jpg" alt="main banner">
-    </main>
-    <section>
-        <h2>About Us</h2>
-        <div>
+        </div>    
+    </div>    
+    <section class="aboutus">
+        <div class="floating">
+            <h2 class="aboutheader">About Us</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora iste impedit, facilis, ea error dignissimos nisi ex animi cupiditate dolores velit ipsa dolore deleniti. Reiciendis minima necessitatibus et veniam facilis!</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta doloremque omnis quaerat cum amet nemo ex rerum perferendis illum, sunt architecto unde eos dicta sit nobis quisquam explicabo. Saepe, velit!</p>
-            <img src="images/about-us.jpg" alt="about us image">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora iste impedit, facilis, ea error dignissimos nisi ex animi cupiditate dolores velit ipsa dolore deleniti. Reiciendis minima necessitatibus et veniam facilis!</p>
         </div>
     </section>
+        <img src="images/about-us.jpg" alt="about us image" class="aboutjpg">
+    </header>
     <!-- Our services page-->
     <!-- Will be using 'grid' to place them accordingly -->
-    <h2>Our Services</h2>
-    <section>
-        <div class="digital">
-            <img src="images/digital.jpg" alt="digital transformation picture">
-            <h3>Digital Transformation</h3>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto perspiciatis nostrum dignissimos sit quibusdam optio sed ab doloribus laudantium sapiente doloremque provident, obcaecati nihil ipsum earum? Sit obcaecati doloribus delectus?</p>
-            <nav>
-                <a href="#">Digital Plans</a>
-                <i class="fa-sharp fa-solid fa-play"></i>
-            </nav>
-        </div>
-        <div class="marketing">
-            <img src="images/marketing.jpg" alt="marketing picture">
-            <h3>Marketing</h3>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto perspiciatis nostrum dignissimos sit quibusdam optio sed ab doloribus laudantium sapiente doloremque provident, obcaecati nihil ipsum earum? Sit obcaecati doloribus delectus?</p>
-            <nav>
-                <a href="#">Marketing Plans</a>
-                <i class="fa-sharp fa-solid fa-play"></i>
-            </nav>
-        </div>
-        <div class="video">
-            <img src="images/video.jpg" alt="video production picture">
-            <h3>Video Production</h3>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto perspiciatis nostrum dignissimos sit quibusdam optio sed ab doloribus laudantium sapiente doloremque provident, obcaecati nihil ipsum earum? Sit obcaecati doloribus delectus?</p>
-            <nav>
-                <a href="#">Video Plans</a>
-                <i class="fa-sharp fa-solid fa-play"></i>
-            </nav>
-        </div>
-        <div class="webdev">
-            <img src="images/web.jpg" alt="web development picture">
-            <h3>Web Development</h3>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto perspiciatis nostrum dignissimos sit quibusdam optio sed ab doloribus laudantium sapiente doloremque provident, obcaecati nihil ipsum earum? Sit obcaecati doloribus delectus?</p>
-            <nav>
-                <a href="#">Web Plans</a>
-                <i class="fa-sharp fa-solid fa-play"></i>
-            </nav>
-        </div>
-        <div class="print">
-            <img src="images/print.jpg" alt="print picture">
-            <h3>Print</h3>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto perspiciatis nostrum dignissimos sit quibusdam optio sed ab doloribus laudantium sapiente doloremque provident, obcaecati nihil ipsum earum? Sit obcaecati doloribus delectus?</p>
-            <nav>
-                <a href="#">Print Plans</a>
-                <i class="fa-sharp fa-solid fa-play"></i>
-            </nav>
+    <section class="service">
+        <h2 class="serviceheader">Our Services</h2>
+        <div class="grid">
+            <div class="digital">
+                <img src="images/digital.jpg" alt="digital transformation picture" class="digpic">
+                <div class="text">
+                    <h3>Digital Transformation</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto perspiciatis nostrum dignissimos sit quibusdam optio sed ab doloribus laudantium sapiente doloremque provident, obcaecati nihil ipsum earum? Sit obcaecati doloribus delectus?</p>
+                </div>
+                <nav class="button1">
+                    <a href="#">Digital Plans</a>
+                    <i class="fa-sharp fa-solid fa-play"></i>
+                </nav>
+            </div>
+            <div class="marketing">
+                <img src="images/marketing.jpg" alt="marketing picture" class="markpic">
+                <div class="text">
+                    <h3>Marketing</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto perspiciatis nostrum dignissimos sit quibusdam optio sed ab doloribus laudantium sapiente doloremque provident, obcaecati nihil ipsum earum? Sit obcaecati doloribus delectus?</p>
+                </div>
+                <nav class="button1">
+                    <a href="#">Marketing Plans</a>
+                    <i class="fa-sharp fa-solid fa-play"></i>
+                </nav>
+            </div>
+            <div class="video">
+                <img src="images/video.jpg" alt="video production picture" class="vidpic">
+                <div class="text">
+                    <h3>Video Production</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto perspiciatis nostrum dignissimos sit quibusdam optio sed ab doloribus laudantium sapiente doloremque provident, obcaecati nihil ipsum earum? Sit obcaecati doloribus delectus?</p>
+                </div>
+                <nav class="button2">
+                    <a href="#">Video Plans</a>
+                    <i class="fa-sharp fa-solid fa-play"></i>
+                </nav>
+            </div>
+            <div class="webdev">
+                <img src="images/web.jpg" alt="web development picture" class="webpic">
+                <div class="text">
+                    <h3>Web Development</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto perspiciatis nostrum dignissimos sit quibusdam optio sed ab doloribus laudantium sapiente doloremque provident, obcaecati nihil ipsum earum? Sit obcaecati doloribus delectus?</p>
+                </div>
+                <nav class="button2">
+                    <a href="#">Web Plans</a>
+                    <i class="fa-sharp fa-solid fa-play"></i>
+                </nav>
+            </div>
+            <div class="print">
+                <img src="images/print.jpg" alt="print picture" class="printpic">
+                <div class="text">
+                    <h3>Print</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto perspiciatis nostrum dignissimos sit quibusdam optio sed ab doloribus laudantium sapiente doloremque provident, obcaecati nihil ipsum earum? Sit obcaecati doloribus delectus?</p>
+                </div>
+                <nav class="button2">
+                    <a href="#">Print Plans</a>
+                    <i class="fa-sharp fa-solid fa-play"></i>
+                </nav>
+            </div>
         </div>
     </section>
     <!-- Our Vision banner -->
     <!-- Will be using 'backgroung-image' to place text over image -->
     <section class="vision">
-        <h3>Our Vision</h3>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae, dolore laborum placeat consequuntur ea iure deleniti alias eius iste earum dolorem, magnam labore! Earum labore reiciendis aperiam commodi mollitia odio.</p>
-        <nav>
-            <a href="#">Learn More</a>
-            <i class="fa-sharp fa-solid fa-play"></i>
-        </nav>
-        <img src="images/vision.jpg" alt="our vision image">
+        <div class="ourv">
+            <h3 class="visionheader">Our Vision</h3>
+            <p class="visiontext">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae, dolore laborum placeat consequuntur ea iure deleniti alias eius iste earum dolorem, magnam labore! Earum labore reiciendis aperiam commodi mollitia odio.</p>
+            <nav class="visionbutton">
+                <a href="#">Learn More</a>
+                <i class="fa-sharp fa-solid fa-play"></i>
+            </nav>
+        </div>
     </section>
     <!-- Team members page -->
-    <section>
-        <h2>Our Team</h2>
-        <div class="john">
-            <h3>John Doe</h3>
-            <h4>CEO and Co-owner</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum porro atque voluptatibus error veritatis? Quia ad qui, inventore sapiente modi similique. Commodi totam voluptas quos, distinctio eum vero animi cumque.</p>
-            <img src="images/john.jpg" alt="john doe image">
+    <section class="team">
+        <h2 class="teamheader">Our Team</h2>
+        <div class="flex">
+            <div class="john">
+                    <h3 class="johnheader">John Doe</h3>
+                    <h4 class="johnsub">CEO and Co-owner</h4>
+                    <p class="johnp">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum porro atque voluptatibus error veritatis? Quia ad qui, inventore sapiente modi similique. Commodi totam voluptas quos, distinctio eum vero animi cumque.</p>
+                </div>
+                <img src="images/john.jpg" alt="john doe image" class="johnpic">
+            </div>
         </div>
-        <div class="bob">
-            <h3>Bob Rite</h3>
-            <h4>CFO and Co-owner</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, nemo! Eveniet id amet facilis, expedita quisquam provident, quibusdam assumenda dolor harum nam voluptate illo totam maxime sit error animi eius.</p>
-            <img src="images/bob.jpg" alt="bob rite image">
+        <div class="flex2">    
+            <div class="bob">
+                    <h3 class="bobheader">Bob Rite</h3>
+                    <h4 class="bobsub">CFO and Co-owner</h4>
+                    <p class="bobp">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, nemo! Eveniet id amet facilis, expedita quisquam provident, quibusdam assumenda dolor harum nam voluptate illo totam maxime sit error animi eius.</p>
+                </div>
+                <img src="images/bob.jpg" alt="bob rite image" class="bobpic">
+            </div>
         </div>
     </section>
     <!-- Contact page & location -->
     <!-- Will be using 'float' to place 'Location' and embedded map to the right of 'Send us a message' and form -->
-    <section>
-        <h2>Contact Us</h2>
+    <section class="contact">
+        <h2 class="contactheader">Contact Us</h2>
         <div class="message">
-            <h3>Send us a message</h3>
+            <h3 class="headermessage">Send us a message</h3>
             Full Name
-            <div>
+            <div class="infoinput">
                 <input id="fullname" name="fullname" type="text">
             </div>
             Email
-            <div>
+            <div class="infoinput">
                 <input id="email" name="email" type="text">
             </div>
             Message
-            <div>
+            <div class="messagetext">
                 <input id="message" name="message" type="text">
             </div>
-            Send
+            <p class="send">Send</p> 
         </div>
         <div class="location">
-            <h3>Location</h3>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1435619.70054365!2d-75.754937!3d45.349928!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1680842561691!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <h3 class="locationheader">Location</h3>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1435619.70054365!2d-75.754937!3d45.349928!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1680842561691!5m2!1sen!2sca" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
     <!-- Hours of operation section -->
-        <h3>Hours of operation</h3>
+        <h3 class="operationheader">Hours of operation</h3>
         <table class="operation">
             <thead>
               <tr>
-                <th>Days</th>
-                <th>Hours</th>
+                <th class="days">Days</th>
+                <th class="hours">Hours</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td>Monday - Friday</td>
-                <td>9 AM - 6 PM</td>
+                <td class="week">Monday - Friday</td>
+                <td class="time">9 AM - 6 PM</td>
               </tr>
               <tr>
-                <td>Saturday - Sunday</td>
-                <td>Closed</td>
+                <td class="weekend">Saturday - Sunday</td>
+                <td class="closed">Closed</td>
               </tr>
             </tbody>
           </table>
     </section>
     <!-- footer section -->
     <!-- Will be using 'color' and 'background-color' to chnage text color and background color -->
-    <div class="footer">
-        <footer>
+    <footer class="footer">
+        <div class="footext">
             &copy;Copywrite Three Star Media, 2020
-            <p>All images are taken from Unsplash</p>
-        </footer>
-    </div>
+            <p>All images are taken from <u>Unsplash</u></p>
+        </div>
+    </footer>
 </body>
 </html>

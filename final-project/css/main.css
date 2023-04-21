@@ -1,14 +1,566 @@
-/* .message{
-    float:left;
-} 
-
-.footer{
-    background-color:rgb(32, 31, 31);
-    color: orange;
+body{
+    font-family: 'Open Sans', sans-serif;
 }
 
-.header{
-    background-color: rgb(32, 31, 31);
-    color: orange;
-    float: ;
-}*/
+@media screen and (min-width: 760px){
+
+    *{
+    box-sizing:border-box;
+    }
+
+    /* Header */
+    .search{
+        background-color: #222;
+        width:1200px;
+        margin-left:auto;
+        margin-right:auto;
+        z-index:1000;
+        position: relative;
+        top:-8px;
+        height:150px;
+    }
+
+    .navigation{
+        display:inline;
+        margin-left:155px;
+        padding-top:20px;
+    }
+
+    .menu-bar a:visited,a:link{
+        color: #c78c06;
+    }
+
+    ul{
+        padding-left:275px;
+    }
+
+    ul li{
+        list-style-type:none;
+        display:inline;
+        margin-left:auto;
+        margin-right:auto;
+    }
+
+    .home{
+        padding-left:50px;
+    }
+
+    .about{
+        padding-left:50px;
+    }
+
+    .services{
+        padding-left:50px;
+    }
+
+    .team{
+        padding-left:50px;
+        padding-right:50px;
+    }
+
+    .searchbar{
+        margin-left:50px;
+    }
+    
+    .navigation a:hover{
+        color: black;
+        background-color:#c78c06;
+    }
+
+    .fa-sharp1{
+        color: #c78c06;
+        padding:1px;
+        border-style:solid;
+        border-width:1px;
+    }
+
+    
+    /* Welcome to Three Star Media */
+
+    .header{
+        background-color: #ffe6ac;
+        max-width:1200px;
+        margin-left: auto;
+        margin-right: auto;
+        height: 990px;
+    }
+
+
+    .mainbanner {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 1200px;
+        height: 900px;
+        bottom: 320px;
+        position: relative;
+      }
+    
+    .welcome {
+        background-color: rgba(0, 0, 0,.67);
+        width: 1000px;
+        height: 425px;
+        top: 190px;
+        margin-left: 98px;
+        position: absolute;
+      }
+      
+     h1{
+        margin-top: 38px;
+        margin-left: 10px;
+        color: white;
+        font-size: 80px;
+        font-weight:600;
+        text-align: left;
+        position: absolute;
+      }
+
+      #main-p{
+        margin-top: 285px;
+        margin-left: 10px;
+        color: white;
+        font-size: 13px;
+        left: 535px;
+        text-align: left;
+        margin-right:50px;
+      }
+
+      .mainbutton{
+        background-color: #c78c06;
+        opacity:100%;
+        margin-left: 10px;
+        padding-top: 28px;
+        padding-bottom:28px;
+        padding-left: 28px;
+        padding-right: 1rem;
+        text-align: left;
+        text-decoration: none;
+        margin-right:779px;
+      }
+
+      .connect{
+        padding-right:15px;
+      }
+
+      .mainbutton, a:link,a:visited{
+        text-decoration: none;
+        color: black;
+      }
+
+      /* About Us */
+
+      .aboutus{
+        float:right;
+        padding-right:98px;
+        padding-bottom:20px;
+        margin-top:-338px;
+      }
+
+      .aboutheader{
+        font-weight:700;
+        font-size:40px;
+      }
+
+      .floating{
+        width:530px;
+        font-size:14px;
+      }
+
+      .aboutjpg{
+        max-width:38%;
+        margin-left:98px;
+        padding-bottom:20px;
+        margin-top:-320px;
+        padding-bottom:95px;
+      }
+
+      /* Our Services */
+
+      
+      .service{
+        width:1013px;
+        margin-left: auto;
+        margin-right:auto;
+      }
+
+      .serviceheader{
+        font-size:38px;
+      }
+
+      .grid{
+        display:grid;
+        grid-template-columns:repeat(6,1fr);
+        grid-template-rows:repeat(2,1fr);
+        grid-template-areas:
+        'd d d m m m'
+        'v v w w p p';
+        grid-gap:10px;
+        height:1100px;
+      }
+
+      .digital{
+        grid-area:d;
+        background-color:#ffe6ac;
+      }
+
+      .marketing{
+        grid-area:m;
+        background-color: #ffe6ac;
+      }
+
+      .video{
+        grid-area:v;
+        background-color: #ffe6ac;
+      }
+
+      .webdev{
+        grid-area:w;
+        background-color: #ffe6ac;
+      }
+
+      .print{
+        grid-area:p;
+        background-color: #ffe6ac;
+      }
+
+      .button1{
+        background-color: #000000;
+        margin-left:12px;
+        padding-top:20px;
+        padding-bottom:20px;
+        margin-bottom:13px;
+        padding-left:auto;
+        text-align:center;
+        text-decoration:none;
+        margin-right:12px;
+        color: #ffffff;
+      }
+
+      .button1 a:visited,a:link{
+        color: #ffffff;
+      }
+
+      .button2{
+        background-color: #000000;
+        margin-left:12px;
+        padding-top:20px;
+        padding-bottom:20px;
+        margin-bottom:14px;
+        padding-left:auto;
+        text-align:center;
+        text-decoration:none;
+        margin-right:12px;
+        color: #ffffff;
+      }
+
+      .button2 a:visited,a:link{
+        color: #ffffff;
+      }
+
+      .text{
+        padding-left:13px;
+        padding-right:13px;
+      }
+
+      .text h3{
+        font-size:27px;
+      }
+
+      .text p{
+        font-size:13px;
+      }
+
+      .digpic{
+        width:502px;
+      }
+
+      .markpic{
+        width:501px;
+      }
+
+      .vidpic{
+        width:331px;
+      }
+
+      .webpic{
+        width:331px;
+      }
+
+      .printpic{
+        width:331px;
+      }
+
+      /* Our Vision */
+
+      .vision{
+        margin-top: 31px;
+        padding-top: 45px;
+        padding-bottom: 45px;
+        background-image:url(../images/vision.jpg);
+        background-size: 1200px;
+        background-repeat: no-repeat;
+        background-position: center;
+        color:white;
+        width:1200px;
+        margin-right:auto;
+        margin-left:auto;
+      }
+
+      .ourv{
+        margin-top:-42px;
+        margin-left:90px;
+        margin-right:90px;
+      }
+
+      .visionheader{
+        font-size: 25px;
+      }
+
+      .visiontext{
+        font-size:12px;
+      }
+
+      .visionbutton{
+        background-color: #09182e;
+        margin-left:1px;
+        padding-top:20px;
+        padding-bottom:20px;
+        margin-bottom:-33px;
+        text-align:center;
+        text-decoration:none;
+        margin-right:870px;
+        border-style:solid;
+        border-color: #c78c06;
+        border-width: 1px;
+      }
+
+      .visionbutton a:visited,a:link{
+        color: #ffffff;
+      }
+
+      /* Our Teams */
+
+      .team{
+        width:1000px;
+        margin-left:auto;
+        margin-right:auto;
+      }
+
+      .flex{
+        background-color: #ffe6ac;
+        display:flex;
+        flex-direction: row-reverse;
+      }
+
+      .flex2{
+        background-color: #ffe6ac;
+        display:flex;
+        flex-direction:row;
+      }
+
+      .john{
+        margin-left:13px;
+        margin-right:13px;
+      }
+
+      .bob{
+        margin-left:13px;
+        margin-right:13px;
+      }
+
+      .johnheader{
+        font-size:25px;
+        margin-bottom:-10px;
+      }
+
+      .bobheader{
+        font-size:25px;
+        margin-bottom:-10px;
+      }
+
+      .johnsub{
+        border-style:solid;
+        border-color:#c78c06;
+        border-width:2px;
+        border-top: transparent;
+        border-left: transparent;
+        border-right: transparent;
+      }
+
+      .bobsub{
+        border-style:solid;
+        border-color:#c78c06;
+        border-width:2px;
+        border-top: transparent;
+        border-left: transparent;
+        border-right: transparent;
+      }
+
+      .johnp{
+        font-size:14px;
+      }
+
+      .bobp{
+        font-size:14px;
+      }
+
+      .johnpic{
+        width:450px;
+      }
+
+      .bobpic{
+        width:450px;
+      }
+
+      .teamheader{
+        font-size:38px;
+      }
+
+      /* Contact Us */
+
+      .contact{
+        width:1000px;
+        margin-left:auto;
+        margin-right:auto;
+      }
+
+      .message{
+        float:left;
+        margin-right: 20px;
+      }
+
+      .contactheader{
+        font-size:37px;
+      }
+
+      .infoinput input[type=text]{
+        width:490px;
+        margin: 8px 0;
+      }
+
+      .messagetext input[type=text]{
+        height:120px;
+        width:490px;
+      }
+
+      .locationheader{
+        margin-bottom:8px;
+        font-size:24px;
+      }
+
+      .headermessage{
+        margin-top:0px;
+        font-size:24px;
+      }
+
+      iframe{
+        border: 0;
+        width:490px;
+        height:400px;
+    }
+
+    .send{
+        border-style: solid;
+        border-color: #222;
+        background-color: #222;
+        color: #c78c06;
+        margin-right:440px;
+        text-align:center;
+        margin-top:5px;
+    }
+
+    /* Hours of Operation */
+
+    .operationheader{
+        font-size:24px;
+        padding-top:10px;
+    }
+
+    .operation{
+        margin-bottom:15px;
+        border-style:solid;
+        border-width:1px;
+        border-color: black;
+        border-collapse:collapse;
+        font-size:15px;
+    }
+
+    .days{
+        border-style:solid;
+        border-width:1px;
+        border-color: black;
+        padding-left:270px;
+        padding-right:270px;
+        padding-top:13px;
+        padding-bottom:13px;
+        background-color:#ffe6ac;
+        font-weight:100;
+    }
+
+    .hours{
+        border-style:solid;
+        border-width:1px;
+        border-color: black;
+        padding-left:185px;
+        padding-right:185px;
+        padding-top:13px;
+        padding-bottom:13px;
+        background-color:#ffe6ac;
+        font-weight:100;
+    }
+
+    .week{
+        border-style:solid;
+        border-width:1px;
+        border-color:black;
+        padding-top:13px;
+        padding-bottom:13px;
+        padding-left:13px;
+    }
+
+    .time{
+        border-style:solid;
+        border-width:1px;
+        border-color:black;
+        padding-top:13px;
+        padding-bottom:13px;
+        padding-left:13px;
+    }
+
+    .weekend{
+        border-style:solid;
+        border-width:1px;
+        border-color:black;
+        padding-top:13px;
+        padding-bottom:13px;
+        padding-left:13px;
+    }
+
+    .closed{
+        border-style:solid;
+        border-width:1px;
+        border-color:black;
+        padding-top:13px;
+        padding-bottom:13px;
+        padding-left:13px;
+    }
+
+    /* Footer */
+
+    .footer{
+        background-color:#222;
+        color:#c78c06;
+        width:1200px;
+        margin-left:auto;
+        margin-right:auto;
+        padding-top:30px;
+        padding-bottom:8px;
+    }
+
+    .footext{
+        margin-left:100px;
+        text-align:left;
+        font-size: 13px;
+    }
+
+    }

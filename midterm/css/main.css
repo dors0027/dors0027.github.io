@@ -49,13 +49,13 @@ div p{
     width: 62%;
     float: right;
 }
-
+/*
 .clearfix::after{
     content:"";
     display: block;
     clear: both;
 }
-
+*/
 section h3{
     padding-left: 15px;
 }
