@@ -2,18 +2,224 @@ body{
     font-family: 'Open Sans', sans-serif;
 }
 
- /* Header */
+@media screen and (max-width:760px){
+
+/* Header */
  .search{
     background-color: #222;
-    width:760px;
-    margin-left:auto;
-    margin-right:auto;
-    z-index:1000;
+    width: 760px;
+    height: 480px;
     position: relative;
-    top:-8px;
-    height:150px;
 }
 
+.header{
+    background-color: #ffe6ac;
+    width:760px;
+    margin-left: auto;
+    margin-right: auto;
+    height:1735px;
+}
+
+/* Welcome to Three Star Media */
+
+.mainbanner {
+    display: block;
+    margin-top: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 760px;
+    height: auto;
+    bottom: 320px;
+    position: relative;
+  }
+
+  .welcome {
+    background-color: rgba(0, 0, 0,.67);
+    width:760px;
+    height:430px;
+    top:540px;
+    position: absolute;
+  }
+
+  h1{
+    margin-top: 38px;
+    margin-left: 10px;
+    color: white;
+    font-size: 70px;
+    font-weight:600;
+    text-align: left;
+    position: absolute;
+  }
+
+  #main-p{
+    margin-top: 265px;
+    margin-left: 10px;
+    color: white;
+    font-size: 13px;
+    left: 535px;
+    text-align: left;
+    margin-right:50px;
+  }
+
+  .mainbutton{
+    background-color: #c78c06;
+    opacity:100%;
+    margin-left: 10px;
+    padding-top: 30px;
+    padding-bottom:30px;
+    padding-left: 30px;
+    padding-right: 1rem;
+    text-align:left;
+    text-decoration: none;
+    margin-right:516px;
+  }
+
+  .mainbutton, a:link,a:visited{
+    text-decoration: none;
+    color: black;
+  }
+
+  .connect{
+    padding-right:15px;
+    font-size: 19px;
+  }
+
+  /* About Us */
+
+  .aboutjpghidden{
+    width:720px;
+    margin-left:20px;
+    margin-top:-300px;
+  }
+
+  .aboutjpg{
+    display:none;
+  }
+
+  .aboutheader{
+    font-weight:700;
+    font-size:50px;
+  }
+
+  .floating{
+    margin-left:20px;
+    margin-right:20px;
+    font-size:16px;
+  }
+
+  .aboutus{
+    display:flex;
+    flex-direction: column-reverse;
+  }
+
+  /* Our Services */
+
+  .digital{
+    background-color:#ffe6ac;
+    margin-bottom:15px;
+  }
+
+  .marketing{
+    background-color: #ffe6ac;
+    margin-bottom:15px;
+  }
+
+  .video{
+    background-color: #ffe6ac;
+    margin-bottom:15px;
+  }
+
+  .webdev{
+    background-color: #ffe6ac;
+    margin-bottom:15px;
+  }
+
+  .print{
+    background-color: #ffe6ac;
+    margin-bottom:15px;
+  }
+
+  .digpic{
+    width:721px;
+  }
+
+  .markpic{
+    width:721px;
+  }
+
+  .vidpic{
+    width:721px;
+  }
+
+  .webpic{
+    width:721px;
+  }
+
+  .printpic{
+    width:721px;
+  }
+
+  .digi{
+    font-size:35px;
+  }
+
+  .mark{
+    font-size:35px;
+  }
+
+  .prod{
+    font-size:35px;
+  }
+
+  .deve{
+    font-size:35px;
+  }
+
+  .pri{
+    font-size:35px;
+  }
+
+  .text{
+    padding-left:15px;
+    padding-right:15px;
+  }
+
+  .button1{
+    background-color:#222;
+    margin-left:12px;
+    padding-top:25px;
+    padding-bottom:25px;
+    margin-bottom:15px;
+    padding-left:auto;
+    text-align:center;
+    text-decoration:none;
+    margin-right:530px;
+    color: #ffffff;
+  }
+
+  .button1 a:visited,a:link{
+    color: #ffffff;
+  }
+
+  .button2{
+    background-color:#222;
+    margin-left:12px;
+    padding-top:25px;
+    padding-bottom:25px;
+    margin-bottom:14px;
+    padding-left:auto;
+    text-align:center;
+    text-decoration:none;
+    margin-right:530px;
+    color: #ffffff;
+  }
+
+  .button2 a:visited,a:link{
+    color: #ffffff;
+  }
+
+}
+ 
 @media screen and (min-width: 760px){
 
     *{
@@ -184,6 +390,10 @@ body{
         padding-bottom:20px;
         margin-top:-320px;
         padding-bottom:95px;
+      }
+
+      .aboutjpghidden{
+        display:none;
       }
 
       /* Our Services */
